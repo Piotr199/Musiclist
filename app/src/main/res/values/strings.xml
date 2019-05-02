@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Musiclist</string>
+    <string name="button_addMusiclist">Add Musiclist</string>
+    <string name="button_saveMusiclist">Save Musiclist</string>
+    <string name="menu_deleteMusiclist">Delete</string>
+    <string name="button_addImage"> Add Image </string>
+    <string name="button_changeImage">Change Image</string>
+    <string name="hint_musiclistTitle">Song Title</string>
+    <string name="hint_musiclistArtist">Song Artist</string>
+    <string name="hint_musiclistGenre">Song Genre</string>
+
+    <string name="hint_musiclistDescription">Song Description</string>
+    <string name="menu_addMusiclist">Add</string>
+    <string name="menu_cancelMusiclist">Cancel</string>
+    <string name="message_enter_title">Please enter a title</string>
+    <string name="select_musiclist_image">Select musiclist image</string>
+</resources>
+

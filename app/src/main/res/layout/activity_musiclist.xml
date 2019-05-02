@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.wit.musiclist.activities.MusiclistActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="0dp">
+
+        <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:fitsSystemWindows="true"
+                app:elevation="0dip"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbarAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:titleTextColor="@color/colorAccent" android:layout_above="@+id/appBarLayout"/>
+
+        </android.support.design.widget.AppBarLayout>
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/appBarLayout"
+                android:layout_marginTop="0dp"
+                android:fillViewport="true">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:background="@android:color/darker_gray"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <Button
+                            android:id="@+id/chooseImage"
+                            android:layout_width="173dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:background="@color/colorAccent"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:text="@string/button_addImage"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                    />
+                    <Button
+                            android:id="@+id/btnAdd"
+                            android:layout_width="173dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:background="@color/colorAccent"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:stateListAnimator="@null"
+                            android:text="@string/button_addMusiclist"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputEditText
+                            android:id="@+id/musiclistTitle"
+                            style="@style/SubTextColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:hint="@string/hint_musiclistTitle"
+                            android:inputType="text"
+                            android:maxLength="25"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:textColor="#000000"
+                            android:textSize="18sp"/>
+                    <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            style="@style/SubTextColor"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:id="@+id/musiclistArtist"
+                            android:layout_margin="8dp"
+                            android:hint="@string/hint_musiclistArtist"
+                            android:maxLength="25"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp"/>
+                    <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:id="@+id/musiclistGenre"
+                            android:layout_margin="8dp"
+                            android:hint="@string/hint_musiclistGenre"
+                            android:maxLength="25"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp"/>
+                    <android.support.design.widget.TextInputEditText
+                            android:id="@+id/musiclistDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:hint="@string/hint_musiclistDescription"
+                            android:inputType="text"
+                            android:maxLength="200"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp"/>
+                </LinearLayout>
+                <ImageView
+                        android:background="@android:color/darker_gray"
+                        android:id="@+id/musiclistImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="302dp"
+                        app:srcCompat="@mipmap/ic_launcher_round"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
